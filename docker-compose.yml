@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  web:
+    tty: true
+    privileged: true
+    image: waiser/web-dev:1.0
+
+  db:  
+    image: postgres:15.5
+    
