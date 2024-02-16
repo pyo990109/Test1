@@ -4,7 +4,11 @@ services:
     tty: true
     privileged: true
     image: waiser/web-dev:1.0
-
+    environment:
+      - TZ=Asia/Seoul
+      - WDS_SOCKET_PORT
   db:  
     image: postgres:15.5
-    
+
+  model:
+    image: waiser/web-dev:1.0
